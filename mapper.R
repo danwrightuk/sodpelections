@@ -43,7 +43,8 @@ p <- ggplot(data=final.data, aes(long, lat, group = group)) +
                colour = alpha("white", 1/2), size = 0.05)+
   ggtitle("Winning Party in Wiltshire Council Elections in Salisbury, 2017") +
   scale_fill_manual(name="id", values = cols) +
-  theme_void()
+  theme_void() +
+  coord_map()
 
 fig <- ggplotly(p)
 
